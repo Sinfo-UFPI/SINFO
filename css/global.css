@@ -1,0 +1,41 @@
+:root{
+  --color-background-primary: #F2F2F2;
+  --color-background-secondary: #023059;
+
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #000000;
+}
+
+*{
+  margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	appearance: none;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+p, a, span, strong, button{
+  font-family: "Heebo", sans-serif;
+  font-style: normal;
+}
+
+h1, h2, h3{
+  font-family: "Kalam", cursive;
+  font-style: normal;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: min(90vw, 86rem);
+  margin: 0 auto;
+}
+
+body{
+  background-color: var(--color-background-primary);
+}

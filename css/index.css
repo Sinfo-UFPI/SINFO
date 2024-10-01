@@ -1,0 +1,238 @@
+/* Header */
+
+header div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0.5rem 0;
+}
+
+header div:nth-child(2) {
+    background-color:var(--color-background-secondary);
+    color: var(--color-text-primary);
+}
+
+header div:nth-child(2) img{
+   max-width: 300px;
+}
+
+header nav {
+    max-width: 500px;
+    width: 100%;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;    
+}
+
+/* Main */
+
+/* Presentation */
+
+main .presentation {
+    position: relative;
+    color: #000;
+
+    font-size: 1.25rem;
+}
+
+/* main .presentation::before {
+    content: "";
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../img/UFPI.jpeg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+} */
+
+main .presentation div h1 {
+    padding: 8rem 0 2rem 0;
+
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+main .presentation div p{
+    padding-bottom: 8rem;
+}
+
+/* location */
+
+main .location {
+    background-color: var(--color-background-secondary);
+    color: #F2F2F2;
+}
+
+main .location div {
+    padding: 3rem 0;
+}
+
+main .location div h2 {
+    color: #F2F2F2;
+
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+main .location div .content{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+main .location div .content img{
+    max-width: 700px;
+    width: 100%;
+
+    border-radius: 1rem;
+}
+
+main .location div .content div h3{
+    font-size: 1.8rem;
+    color: #05C7F2;
+}
+
+main .location div .content div p{
+    font-size: 1.5rem;
+    color: #F2F2F2;
+
+    margin: 2rem 0 3rem 0;
+}
+
+main .location div .content div a{
+    font-size: 1.5rem;
+
+    color: #F2F2F2;
+    background-color: #05C7F2;
+
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+/* activities */
+
+main .activities {
+    padding: 4rem 0;
+
+    font-size: 1.2rem;
+}
+
+main .activities h2{
+    color: #023059;
+
+    text-align: center;
+
+    font-size: 2.5rem;
+
+    margin-bottom: 2rem;
+}
+
+main .activities .card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+main .activities .card{
+    max-width: 600px;
+    width: 100%;
+
+    border: 1px solid #023059;
+    border-radius: 1rem;
+    padding: 10px;
+}
+
+main .activities .card div{
+    display: flex;
+    align-items: center;
+}
+
+main .activities .card p{
+    margin: 1rem 0;
+}
+
+/* timeline */
+
+main .timeline {
+    background-color: var(--color-background-secondary);
+    font-size: 1.5rem;
+}
+
+main .timeline .container{
+    padding: 4rem 0;
+}
+
+main .timeline h2{
+    color: #F2F2F2;
+
+    text-align: center;
+
+    font-size: 2.5rem;
+
+    margin-bottom: 2rem;
+}
+
+main .timeline table{
+    width: 100%;
+    border-collapse: collapse;
+
+    background-color: #F2F2F2;
+    color: #000;
+}
+
+main .timeline table, th, td {
+    border: 1px solid black;
+}
+  
+main .timeline th {
+    background-color: #F2F2F2;
+
+    padding: 1rem;
+}
+
+main .timeline td {
+    text-align: center;
+    padding: 1rem;
+}
+
+/* realization */
+
+main .realization{
+    margin: 4rem 0;
+}
+
+main .realization .container{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* realization */
+
+footer{
+    background-color: var(--color-background-secondary);
+    color: #F2F2F2;
+}
+
+footer div div{
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 2rem;
+}
+
+footer img:nth-child(1){
+    max-width: 300px;
+}
+
+footer p {
+    text-align: center;
+
+    padding: 2rem 0;
+}
