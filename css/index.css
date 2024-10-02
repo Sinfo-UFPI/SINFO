@@ -1,20 +1,67 @@
 /* Header */
 
-header div{
+header div {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     padding: 0.5rem 0;
 }
 
 header div:nth-child(2) {
-    background-color:var(--color-background-secondary);
+    background-color: var(--color-background-secondary);
     color: var(--color-text-primary);
 }
 
-header div:nth-child(2) img{
-   max-width: 300px;
+header .container-menu {
+    position: relative;
+}
+
+header div .logo {
+    max-width: 300px;
+    width: 100%;
+}
+
+header .menu-mobile {
+    display: none;
+}
+
+header .menu-mobile .menu-visible {
+    display: none; /* Escondido por padrão */
+}
+
+header .menu-mobile.active .menu-visible {
+    display: flex;
+    justify-content: center; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: linear-gradient(to bottom right, #23252B, rgba(17, 18, 17, 0.95));
+    color: var(--color-text-tertiary);
+}
+
+header .menu-mobile.active .menu-visible div nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    font-size: 1.2rem;
+
+    text-align: center;
+}
+
+header .menu-mobile.active .menu-visible div nav ul li a:hover{
+    color: #05C7F2;
+}
+
+header .menu-mobile.active .close {
+    position: absolute;
+    top: 15vh;
+    right: 3.125rem;
+    height: 2.1875rem;
+    cursor: pointer;
 }
 
 header nav {
@@ -24,8 +71,40 @@ header nav {
 
 header nav ul {
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;
 }
+
+header nav ul a {
+    color: #F2F2F2;
+}
+
+@media (max-width: 62rem) {
+    header div:nth-child(2) img {
+        max-width: 250px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 48rem) {
+    header div .menu-web {
+        display: none; 
+    }
+
+    header .menu-mobile {
+        display: block; /* Mostra o botão do menu mobile */
+    }
+}
+
+/* @media (max-width: 21.875rem) {
+    header div:nth-child(1) {
+        justify-content: center;
+    }
+
+    header div:nth-child(2) div {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+} */
 
 /* Main */
 
@@ -37,19 +116,6 @@ main .presentation {
 
     font-size: 1.25rem;
 }
-
-/* main .presentation::before {
-    content: "";
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../img/UFPI.jpeg");
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-} */
 
 main .presentation div h1 {
     padding: 8rem 0 2rem 0;
@@ -82,13 +148,12 @@ main .location div h2 {
 }
 
 main .location div .content{
-
     display: flex;
     justify-content: space-between;
 }
 
 main .location div .content img{
-    max-width: 700px;
+    max-width: 600px;
     width: 100%;
 
     border-radius: 1rem;
@@ -114,6 +179,38 @@ main .location div .content div a{
 
     padding: 1rem;
     border-radius: 0.5rem;
+}
+
+main .location div .content div a:hover{
+    color: #000;
+    background-color: #F2F2F2;
+
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+@media (max-width: 75rem) {
+    main .location div .content img{
+        max-width: 500px;
+    } 
+}
+
+@media (max-width: 62rem) {
+    main .location div .content{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    main .location div .content div a{
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 25rem) {
+    main .location div .content div a{
+        font-size: 1rem;
+    }
 }
 
 /* activities */
@@ -152,10 +249,18 @@ main .activities .card{
 main .activities .card div{
     display: flex;
     align-items: center;
+    gap: 0.8rem;
 }
 
 main .activities .card p{
     margin: 1rem 0;
+}
+
+@media (max-width: 48.625rem) {
+    main .activities .card-container{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
 }
 
 /* timeline */
@@ -202,10 +307,27 @@ main .timeline td {
     padding: 1rem;
 }
 
+@media(max-width: 48.625rem){
+    main .timeline table, th, td {
+        white-space: nowrap;
+    }    
+
+    main .timeline table{
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+}
+
 /* realization */
 
 main .realization{
     margin: 4rem 0;
+}
+
+main .realization img{
+    max-width: 300px;
+    width: 100%;
 }
 
 main .realization .container{
@@ -213,7 +335,19 @@ main .realization .container{
     justify-content: space-around;
 }
 
-/* realization */
+@media (max-width: 48.625rem) {
+    main .realization .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main .realization .container h2{
+        text-align: center;
+        margin: 1rem 0;
+    }
+}
+
+/* footer */
 
 footer{
     background-color: var(--color-background-secondary);
@@ -229,10 +363,20 @@ footer div div{
 
 footer img:nth-child(1){
     max-width: 300px;
+    width: 100%;
 }
 
 footer p {
     text-align: center;
 
     padding: 2rem 0;
+}
+
+@media (max-width: 25rem) {
+    footer div div{
+        justify-content: center;
+    }
+    footer div div img:nth-child(2){
+        display: none;
+    }
 }
