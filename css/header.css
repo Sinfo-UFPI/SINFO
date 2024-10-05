@@ -1,0 +1,153 @@
+/* Header */
+
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+
+header div:nth-child(2) {
+    background-color: var(--color-background-secondary);
+    color: var(--color-text-primary);
+}
+
+header .container-menu {
+    position: relative;
+}
+
+header div .logo {
+    max-width: 200px;
+    width: 100%;
+}
+
+header .menu-mobile {
+    display: none;
+}
+
+header .menu-mobile .menu-visible {
+    display: none;
+}
+
+header .menu-mobile.active .menu-visible {
+    display: flex;
+    justify-content: center; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: linear-gradient(to bottom right, #23252B, rgba(17, 18, 17, 0.95));
+    color: var(--color-text-tertiary);
+}
+
+header .menu-mobile.active .menu-visible div nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    list-style: none;
+}
+
+header .menu-mobile.active .menu-visible div nav ul li a:hover {
+    color: #05C7F2;
+}
+
+header .menu-mobile.active .close {
+    position: absolute;
+    top: 15vh;
+    right: 3.125rem;
+    height: 2.1875rem;
+    cursor: pointer;
+}
+
+header nav {
+    max-width: 500px;
+    width: 100%;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header nav ul a {
+    color: #F2F2F2;
+}
+
+.menu-web ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu-web ul li {
+    position: relative;
+}
+
+.menu-web ul li a {
+    display: block;
+    padding: 1rem;
+    color: #F2F2F2;
+    text-decoration: none;
+}
+
+.menu-web ul .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #023059;
+    box-shadow: 0px 8px 16px 0px 023059;
+    z-index: 1;
+}
+
+.dropdown-content li {
+    width: 200px;
+    border: 1px solid #F2F2F2;
+
+}
+
+.dropdown-content li a {
+    padding: 0.5rem 1rem;
+    color: #F2F2F2;
+}
+
+.menu-web ul li:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li a:hover {
+    background-color: #05C7F2;
+}
+
+@media (max-width: 62rem) {
+    header div:nth-child(2) img {
+        max-width: 250px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 48rem) {
+    header div .menu-web {
+        display: none; 
+    }
+
+    header .menu-mobile {
+        display: block; /* Mostra o botão do menu mobile */
+    }
+}
+
+@media (max-width: 25rem) {
+    header .contact{
+        justify-content: center;
+    }
+
+    header .contact a{
+        display: none;
+    }
+}

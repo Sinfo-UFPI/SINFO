@@ -13,13 +13,21 @@
 	border: 0;
 	appearance: none;
 	text-decoration: none;
-	list-style: none;
 	box-sizing: border-box;
 }
 
-p, a, span, strong, button,h1, h2, h3{
+p, a, span, strong, button,h1, h2, h3, ul, li, strong{
   font-family: "Roboto", sans-serif;
   font-style: normal;
+  line-height: 1.5rem;
+}
+
+h1{
+  line-height: 3rem;
+}
+
+h2{
+  line-height: 2.5rem;
 }
 
 button {
