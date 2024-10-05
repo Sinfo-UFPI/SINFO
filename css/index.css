@@ -210,21 +210,64 @@ main .timeline td {
         overflow-x: auto;
     }
 }
+/* Lectures */
 
-/* realization */
-
-main .realization{
-    margin: 4rem 0;
+main .lectures{
+    margin: 3rem;
 }
 
-main .realization img{
-    max-width: 300px;
+main .lectures h2{
+    color: #023059;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+main .lectures p{
+   text-align: center;
+   font-size: 1.2rem;
+   margin-bottom: 2rem;
+}
+
+main .lectures .container-lectures{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+main .lectures .card-lectures{
+    max-width: 400px;
     width: 100%;
+    padding: 1rem;
+
+    background-color: #023059;
+    color: #F2F2F2;
+    border-radius: 0.5rem;
+
+    text-align: center;
 }
 
-main .realization .container{
-    display: flex;
-    justify-content: space-around;
+main .lectures .card-lectures img{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+main .lectures .card-lectures p{
+    margin-top: 1rem;
+}
+
+@media (max-width: 87.5rem) {
+    main .lectures .container-lectures{
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 62rem) {
+    main .lectures .container-lectures{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
 }
 
 @media (max-width: 48.625rem) {
