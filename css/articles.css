@@ -44,7 +44,7 @@ main .information ul li, main .themes ul li{
     margin-left: 2rem;
 }
 
-main .themes, main .themes p{
+main .themes, main .themes p, main .awards p{
     margin-bottom: 2rem;
     font-size: 1.1rem;
 }
