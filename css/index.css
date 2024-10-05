@@ -213,7 +213,8 @@ main .timeline td {
 /* Lectures */
 
 main .lectures{
-    margin: 3rem 0;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 main .lectures h2{
