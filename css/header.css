@@ -125,13 +125,6 @@ header nav ul a {
     background-color: #05C7F2;
 }
 
-@media (max-width: 62rem) {
-    header div:nth-child(2) img {
-        max-width: 250px;
-        width: 100%;
-    }
-}
-
 @media (max-width: 48rem) {
     header div .menu-web {
         display: none; 
