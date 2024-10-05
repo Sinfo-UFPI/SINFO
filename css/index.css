@@ -213,7 +213,7 @@ main .timeline td {
 /* Lectures */
 
 main .lectures{
-    margin: 3rem;
+    margin: 3rem 0;
 }
 
 main .lectures h2{
@@ -267,17 +267,5 @@ main .lectures .card-lectures p{
     main .lectures .container-lectures{
         grid-template-columns: 1fr;
         gap: 1rem;
-    }
-}
-
-@media (max-width: 48.625rem) {
-    main .realization .container{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    main .realization .container h2{
-        text-align: center;
-        margin: 1rem 0;
     }
 }
