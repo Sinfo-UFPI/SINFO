@@ -180,38 +180,77 @@ main .timeline h2{
     margin-bottom: 2rem;
 }
 
-main .timeline table{
+main .timeline .container div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main .timeline .container div .timeline-card{
+    display: flex;
+    flex-direction: column;
+
+    max-width: 21.875rem;
     width: 100%;
-    border-collapse: collapse;
 
-    background-color: #F2F2F2;
-    color: #000;
+    background-color: #f2f2f2;
+    color: #000000;
 }
 
-main .timeline table, th, td {
-    border: 1px solid black;
-}
-  
-main .timeline th {
-    background-color: #F2F2F2;
-
-    padding: 1rem;
-}
-
-main .timeline td {
+main .timeline .container div .timeline-card h3{
     text-align: center;
-    padding: 1rem;
+
+    padding: 1rem 0;
+    background-color: #3695AB;
+    color: #F2F2F2;
+}
+
+main .timeline .container div .timeline-card div{
+   display: flex;
+   flex-direction: column;
+   padding: 0 1rem;
+}
+
+main .timeline .container div .timeline-card div p{   
+    padding: 1rem 0;
+}
+
+main .timeline .container div .timeline-card div div{   
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   gap: 0.5rem;
+}
+
+main .timeline .container div .timeline-card div div img{
+    max-width: 1.875rem;
+}
+
+main .timeline .container div .timeline-card hr{
+    margin: 1rem 0;
+    height: 0.125rem;
+    background-color: #A8A8A8;
+}
+
+@media(max-width: 62rem){
+    main .timeline .container div .timeline-card{
+        max-width: 18.75rem;
+        width: 100%;
+    }
 }
 
 @media(max-width: 48.625rem){
-    main .timeline table, th, td {
-        white-space: nowrap;
-    }    
+    main .timeline .container div {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        
+        margin: 0 auto;
+    }
 
-    main .timeline table{
-        display: block;
+    main .timeline .container div .timeline-card{
+        max-width: 21.875rem;
         width: 100%;
-        overflow-x: auto;
     }
 }
 /* Lectures */
