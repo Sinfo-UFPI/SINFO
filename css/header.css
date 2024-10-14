@@ -21,6 +21,11 @@ header div .logo {
     width: 100%;
 }
 
+header .container-menu div p {
+    font-size: 1rem;
+    color: #F2F2F2;
+}
+
 header .menu-mobile {
     display: none;
 }
@@ -109,7 +114,6 @@ header nav ul a {
 .dropdown-content li {
     width: 200px;
     border: 1px solid #F2F2F2;
-
 }
 
 .dropdown-content li a {
@@ -125,7 +129,7 @@ header nav ul a {
     background-color: #05C7F2;
 }
 
-@media (max-width: 48rem) {
+@media (max-width: 75rem) {
     header div .menu-web {
         display: none; 
     }
@@ -133,6 +137,12 @@ header nav ul a {
     header .menu-mobile {
         display: block; /* Mostra o botão do menu mobile */
     }
+}
+
+@media(max-width: 36rem){
+    header .container-menu div p {
+        display: none;
+    }    
 }
 
 @media (max-width: 25rem) {
