@@ -178,6 +178,15 @@ main .timeline h2{
     font-size: 2.5rem;
 
     margin-bottom: 2rem;
+
+}
+
+/* Apagar quando tiver o cronograma */
+main .timeline p {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 2rem;
+    color: #F2F2F2;
 }
 
 main .timeline .container div {
@@ -275,7 +284,8 @@ main .lectures p{
 
 main .lectures .container-lectures{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: 1fr 1fr;
     justify-items: center;
 }
 
@@ -293,6 +303,7 @@ main .lectures .card-lectures{
 
 main .lectures .card-lectures img{
     width: 100%;
+    height: 450px;
     margin-bottom: 1rem;
 }
 
@@ -300,12 +311,12 @@ main .lectures .card-lectures p{
     margin-top: 1rem;
 }
 
-@media (max-width: 87.5rem) {
+/* @media (max-width: 87.5rem) {
     main .lectures .container-lectures{
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
     }
-}
+} */
 
 @media (max-width: 62rem) {
     main .lectures .container-lectures{

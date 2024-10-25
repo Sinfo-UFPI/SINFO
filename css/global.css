@@ -16,8 +16,12 @@
 	box-sizing: border-box;
 }
 
-p, a, span, strong, button,h1, h2, h3, ul, li, strong{
-  font-family: "Roboto", sans-serif;
+h1, h2, h3, h4 {
+  font-family: "Montserrat", sans-serif;
+}
+
+p, a, span, strong, button, ul, li, strong{
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   line-height: 1.5rem;
 }
@@ -27,6 +31,10 @@ h1{
 }
 
 h2{
+  line-height: 2.5rem;
+}
+
+h3{
   line-height: 2.5rem;
 }
 
