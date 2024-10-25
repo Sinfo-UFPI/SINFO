@@ -58,6 +58,15 @@ main .shippingDate p{
     font-size: 1.1rem;
 }
 
+main .shippingDate div a{
+    display: block;
+    margin-bottom: 1rem;
+}
+
+main .shippingDate p s{
+    text-decoration:line-through;
+}
+
 @media (max-width: 25rem) {
     main h1{
         font-size: 2rem;

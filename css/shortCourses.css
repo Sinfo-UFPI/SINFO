@@ -49,6 +49,11 @@ main .shippingDate{
     margin-bottom: 2rem;
 }
 
+main .shippingDate div a{
+    display: block;
+    margin-bottom: 1rem;
+}
+
 main .shippingDate p{
     margin-bottom: 1rem;
     font-size: 1.1rem;
